@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  padding: 0 rem(36px);
+  margin: 0 auto;
+
+  @media (min-width: $screen-sm-min) {
+    max-width: rem(620px);
+  }
+
+  @media (min-width: $screen-md-min) {
+    max-width: rem(834px);
+  }
+}

@@ -1,3 +1,4 @@
-body {
-    font-family: "Montserrat", sans-serif;
-}
+@import "styles/base/variables";
+@import "styles/base/utils";
+@import "styles/base/reset";
+@import "styles/components/container";
