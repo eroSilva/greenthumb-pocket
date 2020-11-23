@@ -4,14 +4,24 @@
   padding: 0;
 
   &:focus {
-    outline-offset: 2px;
-    outline: 1px dotted lighten($color-dark, 30%);
+    outline-offset: rem(2px);
+    outline: rem(1px) dotted lighten($color-dark, 30%);
   }
+}
+
+:root {
+  font-size: $size-base;
 }
 
 body {
   font-family: $font-family-base;
-  font-size: $size-base;
+  font-size: inherit;
+  color: $color-text;
+}
+
+p {
+  line-height: rem(22px);
+  margin: rem(16px) 0;
 }
 
 button {
