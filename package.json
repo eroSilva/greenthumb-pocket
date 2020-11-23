@@ -1,7 +1,7 @@
 {
-  "name": "front-end-test-1",
+  "name": "redventures-frontend-test",
   "version": "1.0.0",
-  "description": "Simple Parcel Sandbox",
+  "description": "Red Ventures Frontend Test",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open"
