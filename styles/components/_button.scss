@@ -1,0 +1,62 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-height: rem(50px);
+  padding: rem(16px) rem(57px);
+  border: rem(1px) solid transparent;
+  border-radius: rem(25px);
+  background-color: $color-primary;
+  color: $color-light;
+  font-size: rem(16px);
+  line-height: rem(19.5px);
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-primary, 10%);
+  }
+
+  &:active {
+    background-color: darken($color-primary, 15%);
+  }
+
+  svg {
+    display: block;
+    margin-right: rem(16px);
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $color-primary;
+    border-color: currentColor;
+
+    svg {
+      path {
+        fill: $color-primary;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba($color-primary, 0.2);
+    }
+
+    &:active {
+      background-color: rgba($color-primary, 0.3);
+    }
+  }
+
+  &--icon {
+    padding-right: rem(35px);
+    padding-left: rem(32px);
+  }
+
+  &--block {
+    display: flex;
+    width: 100%;
+  }
+}

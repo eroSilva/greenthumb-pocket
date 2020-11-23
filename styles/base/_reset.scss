@@ -2,11 +2,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  &:focus {
+    outline-offset: 2px;
+    outline: 1px dotted lighten($color-dark, 30%);
+  }
 }
 
 body {
   font-family: $font-family-base;
   font-size: $size-base;
+}
+
+button {
+  font-family: inherit;
 }
 
 img {
