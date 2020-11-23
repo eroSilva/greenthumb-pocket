@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $size-base;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

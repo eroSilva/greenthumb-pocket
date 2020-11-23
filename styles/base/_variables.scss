@@ -1,0 +1,17 @@
+$size-base: 16px;
+
+$font-family-base: "Montserrat", sans-serif;
+
+$color-primary: #15573f;
+$color-secondary: #7baf9e;
+
+$screen-xs: 360px;
+$screen-sm: 768px;
+$screen-md: 1280px;
+$screen-xs-max: ($screen-sm - 1);
+$screen-sm-max: ($screen-md - 1);
+$screen-xs-min: $screen-xs;
+$screen-sm-min: $screen-sm;
+$screen-md-min: $screen-md;
+$breakpoint-max: $screen-sm-max;
+$breakpoint-min: $screen-md-min;

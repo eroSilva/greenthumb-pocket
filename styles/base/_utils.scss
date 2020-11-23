@@ -1,0 +1,7 @@
+@function em($size, $base: $size-base) {
+  @return $size/$base + em;
+}
+
+@function rem($size, $base: $size-base) {
+  @return $size/$base + rem;
+}
