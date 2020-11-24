@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline-offset: rem(2px);
+    outline: rem(1px) dotted lighten($color-dark, 30%);
+  }
+}
+
+:root {
+  font-size: $size-base;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: inherit;
+  color: $color-text;
+}
+
+p {
+  line-height: rem(22px);
+  margin: rem(16px) 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
