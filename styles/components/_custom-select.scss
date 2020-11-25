@@ -1,0 +1,119 @@
+.custom-select {
+  $block: &;
+  $select-border-radius: rem(19px);
+  position: relative;
+  display: block;
+  outline: none;
+  border-top-right-radius: $select-border-radius;
+  border-top-left-radius: $select-border-radius;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: $select-border-radius;
+  }
+
+  &:focus {
+    #{ $block } {
+      &__options {
+        border-radius: $select-border-radius;
+        box-shadow: 0 0 0 rem(1px) $color-border;
+      }
+
+      &__option:hover #{ $block }__label {
+        background-color: $color-tertiary;
+        color: $color-light;
+      }
+
+      &__label {
+        visibility: visible;
+      }
+
+      &__icon {
+        transform: rotateZ(180deg) translateY(50%);
+      }
+    }
+  }
+
+  &:not(:focus) {
+    &:before {
+      box-shadow: 0 0 0 rem(1px) $color-border;
+    }
+
+    #{ $block } {
+      &,
+      &__label {
+        border-radius: $select-border-radius;
+      }
+
+      &__control:checked {
+        + #{ $block }__label {
+          visibility: visible;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &__placeholder {
+    #{ $block }__label {
+      border-top-right-radius: $select-border-radius;
+      border-top-left-radius: $select-border-radius;
+      overflow: hidden;
+    }
+  }
+
+  &__options {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: rem(41px);
+    border-top-right-radius: $select-border-radius;
+    border-top-left-radius: $select-border-radius;
+    overflow: hidden;
+  }
+
+  &__option {
+    &:last-child #{ $block }__label {
+      border-bottom-right-radius: $select-border-radius;
+      border-bottom-left-radius: $select-border-radius;
+    }
+
+    #{ $block }__label {
+      visibility: hidden;
+    }
+  }
+
+  &__label {
+    display: block;
+    width: 100%;
+    padding: rem(6px) rem(18px);
+    line-height: rem(27px);
+    background-color: $color-light;
+    border: rem(1px) solid transparent;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  &__control {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: rem(13px);
+    transform: translateY(-50%);
+
+    svg {
+      fill: $color-border;
+    }
+  }
+}
