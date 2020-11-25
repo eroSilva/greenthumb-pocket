@@ -7,7 +7,7 @@
   padding: rem(16px) rem(57px);
   border: rem(1px) solid transparent;
   border-radius: rem(25px);
-  background-color: $color-primary;
+  background-color: $color-primary-1;
   color: $color-light;
   font-size: rem(16px);
   line-height: rem(19.5px);
@@ -17,11 +17,11 @@
 
   &:hover,
   &:focus {
-    background-color: darken($color-primary, 10%);
+    background-color: darken($color-primary-1, 10%);
   }
 
   &:active {
-    background-color: darken($color-primary, 15%);
+    background-color: darken($color-primary-1, 15%);
   }
 
   svg {
@@ -31,22 +31,22 @@
 
   &--secondary {
     background-color: transparent;
-    color: $color-primary;
+    color: $color-primary-1;
     border-color: currentColor;
 
     svg {
       path {
-        fill: $color-primary;
+        fill: $color-primary-1;
       }
     }
 
     &:hover,
     &:focus {
-      background-color: rgba($color-primary, 0.2);
+      background-color: rgba($color-primary-1, 0.2);
     }
 
     &:active {
-      background-color: rgba($color-primary, 0.3);
+      background-color: rgba($color-primary-1, 0.3);
     }
   }
 

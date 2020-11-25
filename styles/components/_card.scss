@@ -17,7 +17,7 @@
   }
 
   &__title {
-    color: $color-primary;
+    color: $color-primary-1;
     font-size: rem(18px);
     line-height: rem(28px);
     font-weight: 700;
@@ -50,11 +50,11 @@
   &--highlighted {
     #{ $block } {
       &__title {
-        color: $color-secondary;
+        color: $color-primary-2;
       }
 
       &__details-price {
-        color: $color-secondary;
+        color: $color-primary-2;
         font-weight: 700;
       }
     }
