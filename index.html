@@ -11,8 +11,106 @@
     />
     <link rel="stylesheet" href="./index.scss" />
   </head>
-
   <body>
-    <img src="images/hero/logo.svg" alt="Greenthumb" />
+    <main>
+      
+      <section class="hero">
+        <div class="container">
+          <figure class="hero__logo">
+            <img src="images/hero/logo.svg" alt="Greenthumb" />
+          </figure>
+          <h1 class="title-main">Find your next green friend</h1>
+          <ol class="hero__green-friend-list">
+            <li class="hero__green-friend-item">
+              <figure class="hero__green-friend-image">
+                <img src="images/hero/sun.svg" alt="A illustration of a sun using glasses, smiling." width="75" height="75">
+              </figure>
+              <p class="hero__green-friend-description">
+                <span class="highlighted">1.</span> Set the amount of <span class="highlighted">sunlight</span> your plant will get.
+              </p>
+              <div class="custom-select" tabindex="0">
+                <label class="custom-select__placeholder">
+                  <span class="custom-select__label">Select...</span>
+                </label>
+                <div class="custom-select__options">
+                  <label for="no_sunlight" class="custom-select__option">
+                    <input id="no_sunlight" type="radio" name="select-sunlight" class="custom-select__control" value="No sunlight">
+                    <span class="custom-select__label">No sunlight</span>
+                  </label>
+                  <label for="low_sunlight" class="custom-select__option">
+                    <input id="low_sunlight" type="radio" name="select-sunlight" class="custom-select__control" value="Low sunlight">
+                    <span class="custom-select__label">Low sunlight</span>
+                  </label>
+                  <label for="high_sunlight" class="custom-select__option">
+                    <input id="high_sunlight" type="radio" name="select-sunlight" class="custom-select__control" value="High sunlight">
+                    <span class="custom-select__label">High sunlight</span>
+                  </label>
+                </div>
+                <div class="custom-select__icon">
+                  <svg width="18" height="9" viewBox="0 0 18 9"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4202 0L9.00041 7.88733L0.580672 0L0 0.568664L9.00041 9L18 0.568664L17.4202 0Z" /> </svg>
+                </div>
+              </div>
+            </li>
+            <li class="hero__green-friend-item">
+              <figure class="hero__green-friend-image">
+                <img src="images/hero/wateringcan.svg" alt="A illustration of a wateringcan, smiling." width="103" height="75">
+              </figure>
+              <p class="hero__green-friend-description">
+                <span class="highlighted">2.</span> How often do you want to <span class="highlighted">water</span> your plant?
+              </p>
+              <div class="custom-select" tabindex="0">
+                <label class="custom-select__placeholder">
+                  <span class="custom-select__label">Select...</span>
+                </label>
+                <div class="custom-select__options">
+                  <label for="rarely" class="custom-select__option">
+                    <input id="rarely" type="radio" name="select-water" class="custom-select__control" value="Rarely">
+                    <span class="custom-select__label">Rarely</span>
+                  </label>
+                  <label for="regularly" class="custom-select__option">
+                    <input id="regularly" type="radio" name="select"-water class="custom-select__control" value="Regularly">
+                    <span class="custom-select__label">Regularly</span>
+                  </label>
+                  <label for="daily" class="custom-select__option">
+                    <input id="daily" type="radio" name="select"-water class="custom-select__control" value="Daily">
+                    <span class="custom-select__label">Daily</span>
+                  </label>
+                </div>
+                <div class="custom-select__icon">
+                  <svg width="18" height="9" viewBox="0 0 18 9"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4202 0L9.00041 7.88733L0.580672 0L0 0.568664L9.00041 9L18 0.568664L17.4202 0Z" /> </svg>
+                </div>
+              </div>
+            </li>
+            <li class="hero__green-friend-item">
+              <figure class="hero__green-friend-image">
+                <img src="images/hero/dog.svg" alt="A illustration of a dog." width="75" height="62">
+              </figure>
+              <p class="hero__green-friend-description">
+                <span class="highlighted">3.</span> Do you have pets? Do they <span class="highlighted">chew</span> plants?
+              </p>
+              <div class="custom-select" tabindex="0">
+                <label class="custom-select__placeholder">
+                  <span class="custom-select__label">Select...</span>
+                </label>
+                <div class="custom-select__options">
+                  <label for="no_they_don_t_care" class="custom-select__option">
+                    <input id="no_they_don_t_care" type="radio" name="select-pets" class="custom-select__control" value="No/They don’t care">
+                    <span class="custom-select__label">No/They don’t care</span>
+                  </label>
+                  <label for="yes" class="custom-select__option">
+                    <input id="yes" type="radio" name="select-pets" class="custom-select__control" value="Yes">
+                    <span class="custom-select__label">Yes</span>
+                  </label>
+                </div>
+                <div class="custom-select__icon">
+                  <svg width="18" height="9" viewBox="0 0 18 9"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4202 0L9.00041 7.88733L0.580672 0L0 0.568664L9.00041 9L18 0.568664L17.4202 0Z" /> </svg>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+    
+    </main>
   </body>
 </html>
