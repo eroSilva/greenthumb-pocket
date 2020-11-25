@@ -6,6 +6,7 @@
   outline: none;
   border-top-right-radius: $select-border-radius;
   border-top-left-radius: $select-border-radius;
+  cursor: pointer;
 
   &:before {
     content: "";
@@ -25,7 +26,7 @@
       }
 
       &__option:hover #{ $block }__label {
-        background-color: $color-tertiary;
+        background-color: $color-primary-3;
         color: $color-light;
       }
 
@@ -103,6 +104,7 @@
 
   &__control {
     position: absolute;
+    top: 0;
     opacity: 0;
   }
 

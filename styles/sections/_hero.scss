@@ -1,0 +1,73 @@
+.hero {
+  padding: rem(40px) 0 rem(70px);
+  background-color: $color-light;
+
+  @media (min-width: $screen-md-min) {
+    padding: rem(57px) 0 rem(83px);
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: rem(165px);
+    margin-bottom: rem(34px);
+
+    @media (min-width: $screen-md-min) {
+      max-width: rem(207px);
+      margin-bottom: rem(40px);
+    }
+  }
+
+  &__green-friend {
+    &-list {
+      list-style: none;
+
+      @media (min-width: $screen-md-min) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 100px;
+      }
+    }
+
+    &-item {
+      @media (max-width: $screen-sm-max) {
+        &:not(:last-child) {
+          margin-bottom: rem(55px);
+        }
+      }
+    }
+
+    &-image {
+      min-height: rem(80px);
+      display: flex;
+      align-items: center;
+      margin-bottom: rem(6px);
+
+      img {
+        display: block;
+      }
+    }
+
+    &-description {
+      @media (max-width: $screen-sm-max) {
+        padding-right: rem(70px);
+      }
+    }
+  }
+
+  .title-main {
+    color: $color-primary-4;
+    margin-bottom: rem(40px);
+
+    @media (min-width: $screen-md-min) {
+      margin-bottom: rem(66px);
+    }
+  }
+
+  .highlighted {
+    font-weight: 700;
+  }
+
+  .custom-select {
+    margin-top: rem(24px);
+  }
+}

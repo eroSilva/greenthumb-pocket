@@ -1,5 +1,10 @@
 .title-main {
-  font-size: rem(55px);
-  line-height: rem(67px);
+  font-size: rem(40px);
+  line-height: rem(48px);
   font-weight: 700;
+
+  @media (min-width: $screen-md-min) {
+    font-size: rem(55px);
+    line-height: rem(67px);
+  }
 }

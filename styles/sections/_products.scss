@@ -1,0 +1,53 @@
+.products {
+  background-color: $color-background;
+  padding: rem(54px) 0 rem(73px);
+
+  @media (min-width: $screen-md-min) {
+    padding: rem(47px) 0 rem(130px);
+  }
+
+  &__image {
+    margin-bottom: rem(16px);
+
+    @media (min-width: $screen-md-min) {
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__list {
+    margin: rem(34px) 0 rem(39px);
+
+    @media (max-width: $screen-sm-max) {
+      display: flex;
+      overflow: auto;
+      margin-left: -36px;
+      margin-right: -36px;
+      padding-left: 36px;
+
+      &:after {
+        content: "";
+        min-width: rem(1px);
+        margin-left: rem(16px);
+      }
+    }
+
+    @media (min-width: $screen-md-min) {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      column-gap: 34px;
+      row-gap: 40px;
+      margin: rem(68px) 0 rem(59px);
+    }
+
+    .card {
+      @media (max-width: $screen-sm-max) {
+        min-width: rem(268px);
+        margin-right: rem(20px);
+      }
+    }
+  }
+
+  .title-main {
+    color: $color-primary-5;
+  }
+}
