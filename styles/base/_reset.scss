@@ -5,7 +5,7 @@
 
   &:focus {
     outline-offset: rem(2px);
-    outline: rem(1px) dotted lighten($color-dark, 30%);
+    outline: rem(1px) dotted lighten($color-dark, 10%);
   }
 }
 
